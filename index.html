@@ -4,6 +4,7 @@
     <meta chartset="utf-8">
     <title>EVERY EMOJI</title>
     <meta name="description" content="Every emoji." />
+    <meta name="keywords" content="Every emoji,emoji,emoji animation" />
     <meta name="author" content="Jonathan Vingiano">
 
     <meta name="robots" content="index,follow">
@@ -53,19 +54,22 @@
        overflow: hidden;
      }
 
-     .twitter-share-button { vertical-align:top }
+     .twitter-share-button { vertical-align:top; width: 140px!important }
 
      #social {
        opacity: 0;
        bottom: 20px;
-       left: 20px;
+       left: 50%;
+       margin-left: -105px;
        position: absolute;
-       -webkit-animation: fadein 1s 3s forwards;
-       -moz-animation: fadein 1s 3s forwards;
-       -ms-animation: fadein 1s 3s forwards;
-       -o-animation: fadein 1s 3s forwards;
-       animation: fadein 1s 3s forwards;
+       -webkit-animation: fadein 1s 2s forwards;
+       -moz-animation: fadein 1s 2s forwards;
+       -ms-animation: fadein 1s 2s forwards;
+       -o-animation: fadein 1s 2s forwards;
+       animation: fadein 1s 2s forwards;
      }
+
+     #social iframe { margin: 0; padding 0; text-align: center;}
 
      @keyframes fadein {
        from { opacity: 0; }
@@ -106,7 +110,7 @@
       </div>
       <script>
        function resize() {
-         document.getElementById("social").style.left = parseInt(window.innerWidth / 2 - social.getBoundingClientRect().width / 2) + "px";
+         //document.getElementById("social").style.left = parseInt(window.innerWidth / 2 - social.getBoundingClientRect().width / 2) + "px";
        }
        window.onresize = function(){resize();}
        resize();
