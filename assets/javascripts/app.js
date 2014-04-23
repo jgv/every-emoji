@@ -12,7 +12,7 @@ window.requestAnimFrame = (function(){
 var App = App || {};
 App = {
   'loaded': false,
-  'host': window.location.href + "assets/emoji/",
+  'host': window.location.origin + "/assets/emoji/",
   'canvas': document.getElementById('canvas'),
   'ctx': this.canvas.getContext('2d'),
   'images': [],
